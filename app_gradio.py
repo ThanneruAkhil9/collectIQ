@@ -220,7 +220,9 @@ segments customers into 5 personas (**k-means**), and picks an action from 6 too
 Sister project to **[AP-hybrid-rag](https://github.com/ThanneruAkhil9/AP-hybrid-rag)** — together a complete Finance + AI portfolio.
 """
 
-with gr.Blocks(title="CollectIQ — AR Collections Agent") as demo:
+with gr.Blocks(title="CollectIQ — AR Collections Agent",
+                theme=gr.themes.Soft(),
+                css=CSS) as demo:
     gr.Markdown(INTRO)
 
     with gr.Tabs():
@@ -295,7 +297,5 @@ with gr.Blocks(title="CollectIQ — AR Collections Agent") as demo:
 if __name__ == "__main__":
     demo.queue(max_size=10).launch(
         server_name="0.0.0.0",
-        server_port=7861,
-        theme=gr.themes.Soft(),
-        css=CSS,
+        server_port=7860,
     )
