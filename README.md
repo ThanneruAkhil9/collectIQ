@@ -1,3 +1,14 @@
+---
+title: CollectIQ
+emoji: 💰
+colorFrom: green
+colorTo: blue
+sdk: gradio
+sdk_version: 6.0.0
+app_file: app_gradio.py
+pinned: false
+license: mit
+---
 # 💰 CollectIQ — Autonomous AR Collections Agent
 
 > Production-grade AI agent for Accounts Receivable collections. Predicts which invoices won't get paid on time, segments customers by payment behavior, and drafts tone-matched collection emails — fully observable, with guardrails, on a 100% free stack.
