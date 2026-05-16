@@ -28,3 +28,4 @@ joblib==1.4.2
 
 # Fallback for Python 3.13 (HF Spaces sometimes uses 3.13)
 audioop-lts; python_version >= "3.13"
+Get-Content requirements.txt
