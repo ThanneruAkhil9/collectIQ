@@ -144,6 +144,7 @@ def train_and_evaluate(data_dir: Path = None, save_model: bool = True) -> dict:
         print(f"\n💾 Saved model → {models_dir / 'late_payment.xgb'}")
 
         # Save eval metrics for README
+         (data_dir / "eval").mkdir(parents=True, exist_ok=True)
         with open(data_dir / "eval" / "classifier_metrics.json", "w") as f:
             json.dump(metrics, f, indent=2)
 
